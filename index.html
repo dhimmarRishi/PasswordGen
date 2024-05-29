@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Italianno&family=Montserrat:wght@500&family=Mooli&family=Noto+Serif:wght@100&family=PT+Serif&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Borel&family=Italianno&family=Montserrat:wght@300;500&family=Mooli&family=Noto+Serif:wght@100&family=PT+Serif&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav-con">
+        <div class="left">
+            <li>Password</li>
+            <li>Products</li>
+            <li>Resources</li>
+            <li>Pricing</li>
+        </div>
+        <div class="right">
+            <li id="more">More</li>
+            <li>sign in</li>
+            <li>Talk to Sales</li>
+            <li id="prem">Try Premium</li>
+        </div>
+    </nav>
+    <div class="main-con">
+        <div class="con">
+            <div class="label">
+                ...Generate a random Password...
+            </div>
+            <div class="tag-line">
+                Generate secure, random passwords to stay safe online.
+            </div>
+
+
+            <div class="pass">
+                <span class="display" id='display' contenteditable="true"
+                    data-text="Select the Length of the password"></span>
+            </div>
+            <div class="constrains-con">
+                <div class="length">
+                    <div class="len-label">
+                        Length : &nbsp;<span id='lennum'>8</span>
+                        <div class="len-ip">
+                            <input type="range" min="1" max="40" value="8" id='range'>
+                        </div>
+                    </div>
+                    <div class="rest-info">
+
+                        <div class="numbers">
+                            <input type="checkbox" class="check" checked>
+                            <div class="numlab">Numbers</div>
+                        </div>
+                        <div class="letters">
+                            <input type="checkbox" class="check" checked>
+                            <div class="latlab">Letters</div>
+                        </div>
+                        <div class="sps">
+                            <input type="checkbox" class="check">
+                            <div class="latlab">Sp.char</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle-label">
+                What makes a password strong?
+            </div>
+            <div class="info-card">
+                <div class="img-card">
+                    <img src="images/img1.svg" alt="">
+                </div>
+                <div class="content">
+                    <b class="b"> passwords are unique and random.</b>
+                    Humans aren’t very good at coming up with passwords that are either of those things, let alone both.
+                    So
+                    we created the 1Password Strong Password Generator to create secure, memorable passwords for you.
+                    81% of
+                    data breaches are caused by reused or weak passwords, so random, unique passwords are your best
+                    defense
+                    against online threats.
+                </div>
+            </div>
+
+
+            <div class="info-card">
+                <div class="img-card">
+                    <img src="images/img2.svg" alt="">
+                </div>
+                <div class="content">
+                    <b class="b"> Why should my password be unique?</b>
+                    If you use the same password for both your email account and your bank account login, an
+                    attacker only needs to steal one password to get access to both accounts, doubling your
+                    exposure. If you've used that same password for 14 different accounts, you're making the
+                    attacker's job very, very easy. You can protect yourself by using a generator to create
+                    unique passwords that are easy to remember.
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="img-card">
+                    <img src="images/img3.svg" alt="">
+                </div>
+                <div class="content">
+                    <b class="b">Why should my password be random?</b>
+                    Random passwords are hard to guess and harder for computer programs to crack. If there's a
+                    discernible pattern, the odds of an attacker using a brute force attack and gaining access to your
+                    account goes up exponentially. Random passwords might contain a jumble of unrelated characters, but
+                    combining unrelated words also works. That's how the 1Password Strong Password Generator creates
+                    passwords that are easy to remember but still cryptographically strong.
+                </div>
+            </div>
+            <div class="content only">
+                <b class="b">The Strong Password Generator powered by 1Password</b>
+                If it sounds hard to come up with a unique, random password each and every time you sign up for a new
+                service, that’s because it is. That’s why we built the 1Password Strong Password Generator to generate
+                strong passwords for you.
+
+                It’s also quite hard to remember all those passwords when you need them. That’s why we made 1Password.
+                1Password is a password manager app that works on almost any device to generate secure passwords on the
+                fly. When you need to log into a site, 1Password will autofill the login details for you. All you need
+                to remember now is one secure password – that unlocks all of the random, strong passwords the built-in
+                password generator created for you.
+            </div>
+            <div class="line"></div>
+
+            <div class="content only" style="margin-top: 100px;">
+                <b class="b">I need to generate a memorable, but strong password. Any
+                    tips?</b>
+                A random password generator is the best way to generate passwords that are both secure and easy to
+                remember. But if you find yourself without access to the Strong Password Generator tool, keep these tips
+                in mind to stay safe online.
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="err-card">
+            <div class="err-type">
+                MOTHER'S MAIDEN NAME? : Smith1980
+                <i class="fa-regular fa-circle-xmark" style="color: #ff3333;"></i>
+            </div>
+            <div class="inner-err-card">
+
+                <div class="content err-content">
+                    <b>Never include personally identifiable information in your passwords</b> or any fields related to
+                    your
+                    login credentials for that matter. You might be surprised at how much of that information can be
+                    found online. Those three security questions that your bank requires for you to log in? Don't answer
+                    those. Instead, use the Strong Password Generator to generate random, unique answers to those
+                    questions. Save the answers in your 1Password Vault just like you would a regular password, and
+                    you're good to go.
+                </div>
+            </div>
+        </div>
+        <div class="err-card">
+            <div class="err-type">
+                random-escapee-mount-optimal
+                <i class="fa-regular fa-circle-check" style="color: #00c73c;"></i>
+            </div>
+            <div class="inner-err-card">
+
+                <div class="content err-content">
+                    <b>Remember, randomness is a critical factor in password strength</b> and the best way to generate a
+                    truly
+                    random password is with a password generator. If you need a password that's both random and
+                    memorable, simply select “Memorable Password” in the password generator. Instead of a random
+                    character set, you'll get four easy-to-remember words strung together.
+                </div>
+            </div>
+        </div>
+        <div class="err-card">
+            <div class="err-type">
+                UK#nZOr3NvJRFk-T%S&5b95b
+                <i class="fa-regular fa-circle-xmark" style="color: #ff3333;"></i>
+            </div>
+            <div class="inner-err-card">
+                <div class="content err-content">
+                    <b>Similarly, there's no need to include a specific combination</b> of numbers, uppercase letters,
+                    lowercase letters, and symbols. Doing so doesn't necessarily make the password stronger. What's more
+                    important is that the words used are random. However, because some services have specific character
+                    requirements, the random password generator includes options to accommodate those requirements – not
+                    because it makes a stronger password, but because it makes it easier for you to create a password
+                    that works.
+                </div>
+            </div>
+        </div>
+        <div class="err-card">
+            <div class="err-type">
+                ONE-TIME PASSWORD: 987 : 123
+                <i class="fa-regular fa-circle-check" style="color: #00c73c;"></i>
+            </div>
+            <div class="inner-err-card">
+
+                <div class="content err-content">
+                    But strong passwords are only one part of account security. You can add an extra layer of protection
+                    by enabling multi-factor authentication (MFA). This requires an additional form of verification
+                    beyond your username and password – typically a code that expires after a short period of time. Our
+                    password manager can act as a third-party authenticator app to store and deliver these codes,
+                    blocking any attacker who only knows your username and password.
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="feed-label">
+                <span>Loved By Millions</span>
+            </div>
+            <div class="container">
+
+            <div class="grid-pane">
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                        <i class="fa-solid fa-star" style="color: #0a64ff;"></i>
+                    </div>
+                    <div class="content">
+                        I’ve used 1Password for a few years
+                        and it has proven time and time again how valuable it is to me. Managing my passwords across my
+                        devices is so easy with my subscription.
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
